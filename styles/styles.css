@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    color: #292929;
+    height: 1000px;
+}
+.header{
+    height: 170px;
+    width: 100%;
+    /* background-color: rgb(5, 38, 88); */
+    background-color: #19487b;
+    color: #ebebeb;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.part1, .part2{
+    color: white;
+    
+}
+.logo{
+    width: 40%;
+    margin-left: 5%;
+}
+.part1{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 2fr;
+    justify-content:space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.search .select-container{
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+
+
+}
+
+.search #custName{
+    height: 40px;
+    width: 90%;
+    margin-left: 5%;
+    border: 1px solid white;
+    border-radius: 20px;
+
+   
+}
+
+.search #custName:focus{
+    outline: none;
+    border: none
+}
+
+
+.search p{
+    border-right: 1px solid white;
+    padding-right: 20px;
+    height: 20px;
+}
+#first-p{
+    border-left: 1px solid white;
+    padding-left: 15px;
+
+   
+}
+.search p:last-child{
+    border-right: 0px;
+}
+
+.part2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr 1fr 1.5fr 2fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+
+}
+.part2 a{
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.part2 a:hover{
+    border-bottom: 5px solid yellow;
+}
+
+
+.active{
+    border-bottom: 5px solid yellow;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+li:active{
+    border-bottom: 5px solid yellow;
+
+}
+
+.tutorial a{
+    position: fixed;
+    top: 500px;
+    left: 94%;
+    display: block;
+    width: 10%;
+    background-color: #19487b;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    
+    transform: rotate(-90deg);
+    
+}
+.banner img{
+    width: 100%;
+    margin-top: 1px;
+}
+
+.after-banner{
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    height: 100px;
+    margin-top: -4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+    /* gap: 50px; */
+    /* justify-content: space-around; */
+    align-items: center;
+    /* position: relative; */
+
+}
+.order-item{
+    /* border: 1px solid; */
+    height: 150px;
+    width: 94%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+   
+   
+}
+.item, .item2{
+    background-color: #fff;
+    height: 170px;
+    align-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    box-shadow: 2px 5px 10px gray;
+    /* border-radius: 10px; */
+}
+.item:hover, .item2:hover{
+    border-bottom: 10px solid #19487b;
+    box-sizing: border-box;
+    
+}
+.item .icon, .item2 .icon2{
+    background-color: rgba(25, 72, 123, 0.678);
+    width: 50px;
+    margin-left: 30%;
+    height: 50px;
+    border-radius: 100%;
+    /* border: 1px solid; */
+    
+}
+.item p, .item2 p{
+    width: 150px;
+    height: 50px;
+    text-align: left;
+    line-height: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    /* border: 1px solid; */
+    margin-left: -70px;
+
+}
+.icon img, .icon2 img{
+    width: 70px;
+    font-weight: bolder;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+a{
+    text-decoration: none;
+   
+}
+.order-item a p{
+    font-size: 25px;
+    color: #292929;
+}
+.changePosition{
+    /* background-color: yellow; */
+    background-color: rgba(25, 72, 123, 0.678);
+    width: 50px;
+    margin-left: 30%;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 30px;
+    border-bottom: 25px solid #19487b;
+
+
+    
+}
+.changeImgPosition{
+    width: 70px;
+    font-weight: bolder;
+    z-index: 1;
+    margin-top: -30px;
+    margin-left: -30px;
+
+
+}
