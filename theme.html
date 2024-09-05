@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .holder{
+            width: 20%;
+            background-color: rgba(128, 128, 128, 0.705);
+            height: 40px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .dark-mode{
+            border: 1px solid rgba(128, 128, 128, 1);;
+            height: 30px;
+            margin-top: 5px;
+            /* font-size: 20px; */
+            font-size: 1.5vw;
+            line-height: 30px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border-left: 0;
+            text-align: center;
+            box-shadow: 1px 1px 1px rgb(255, 255, 255);
+            color: white;
+
+        }
+        .light-mode{
+            border: 1px solid rgba(128, 128, 128, 1);;
+            height: 30px;
+            margin-top: 5px;
+            /* font-size: 20px; */
+            font-size: 1.5vw;
+            line-height: 30px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border-right: 0;
+            text-align: center;
+            box-shadow: 1px 1px 1px rgb(255, 255, 255);
+            color: white;
+
+        }
+        
+        .apply-light-mode, .apply-dark-mode{
+            background-color: white;
+            height: 30px;
+            margin-top: 5px;
+            /* font-size: 20px; */
+            font-size: 1.9vw;
+
+            line-height: 30px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            text-align: center;
+            color: black;
+
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: white;
+            color: black;
+        }
+        h1{
+            width: 100%;
+        }
+    </style>
+    <script src="theme.js" defer></script>
+</head>
+<body>
+    <div class="holder">
+    <div class="light-mode">Light</div>
+    <div class="dark-mode">Dark</div>
+</div>
+<h1>Mode Changer</h1>
+
+</body>
+</html>
